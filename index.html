@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07090c">
+<meta name="description" content="GILL CAR SERVICES — professional automotive servicing, maintenance, diagnostics and repairs.">
+<title>GILL CAR SERVICES | Premium Auto Care</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
+<style>
+:root{--red:#e11d2e;--red2:#ff4051;--ink:#06080b;--panel:#0e1318;--muted:#9aa5b1;--light:#f4f6f8;--line:#e2e7ec;--white:#fff;--max:1240px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#111820;background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(92%,var(--max));margin:auto}
+header{position:sticky;top:0;z-index:100;background:rgba(5,7,10,.88);backdrop-filter:blur(18px);border-bottom:1px solid #ffffff12}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;letter-spacing:.5px;color:#fff;font-size:21px}.logo b{color:var(--red2)}
+nav{display:flex;align-items:center;gap:27px}nav a{color:#dfe5eb;font-size:13px;font-weight:750}
+.nav-cta{padding:11px 17px;border:1px solid #ffffff22;border-radius:10px;background:#fff;color:#090c10}
+.hero{min-height:760px;display:flex;align-items:center;color:#fff;position:relative;isolation:isolate;overflow:hidden;background:#05070a}.hero:before{content:"";position:absolute;inset:-5%;z-index:-2;background-image:url('./IMG_5525.jpeg');background-size:cover;background-position:center;animation:heroDrive 16s ease-in-out infinite alternate;transform-origin:center}.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(4,6,9,.97),rgba(4,6,9,.68) 46%,rgba(4,6,9,.12)),linear-gradient(0deg,rgba(4,6,9,.48),transparent 50%)}
+.eyebrow{color:#ff5360;font-size:11px;font-weight:900;letter-spacing:2.8px;text-transform:uppercase}
+.hero h1{font-size:clamp(48px,7vw,86px);line-height:.96;max-width:850px;margin:16px 0 24px;letter-spacing:-4px}
+.hero h1 span{color:var(--red2)}.hero p{max-width:670px;color:#d5dce3;font-size:18px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:31px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:#fff;padding:14px 21px;border-radius:10px;font-weight:850;border:0;cursor:pointer;box-shadow:0 12px 28px #e11d2e35;transition:.2s}
+.btn:hover{transform:translateY(-2px);background:#f12839}.btn.alt{background:#fff;color:#0a0d10;box-shadow:none}
+.hero-photo-note{margin-top:20px;display:inline-flex;align-items:center;gap:9px;color:#d8dee5;font-size:11px;letter-spacing:.4px;padding:9px 13px;border:1px solid #ffffff18;background:#05070a66;backdrop-filter:blur(10px);border-radius:999px}.pulse-dot{width:7px;height:7px;border-radius:50%;background:#ff3b4d;box-shadow:0 0 0 0 #ff3b4d66;animation:pulseDot 1.8s infinite}.trust{margin-top:39px;display:flex;gap:30px;flex-wrap:wrap;color:#c8d0d8;font-size:12px}.trust strong{display:block;color:#fff;font-size:17px}
+section{padding:94px 0}.title{text-align:center;margin-bottom:48px}.title h2{font-size:clamp(34px,4vw,46px);line-height:1.05;letter-spacing:-1.5px;margin:8px 0 11px}.title p{color:#6c7580;max-width:720px;margin:auto}
+.services{background:var(--light)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.25s;box-shadow:0 8px 30px #10182008}.card:hover{transform:translateY(-6px);box-shadow:0 20px 45px #10182018}
+.card img{width:100%;height:190px;object-fit:cover;display:block}.card-body{padding:20px}.card h3{font-size:17px}.card p{font-size:13px;color:#68727d;margin-top:6px}.card a{display:inline-block;color:var(--red);font-size:13px;font-weight:850;margin-top:12px}
+.feature{background:var(--ink);color:#fff;overflow:hidden}.feature-grid{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:55px}.feature h2{font-size:clamp(40px,5vw,66px);line-height:1.02;letter-spacing:-2.5px;margin:10px 0 18px}.feature h2 span{color:var(--red2)}.feature p{color:#aeb7c1;max-width:570px}
+.benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:28px 0}.benefit{border:1px solid #ffffff16;background:#ffffff08;padding:14px;border-radius:11px;color:#dfe5eb}.benefit b{color:#fff;display:block;margin-bottom:2px}
+.viewer-wrap{position:relative;min-height:500px;border-radius:24px;background:radial-gradient(circle at 50% 45%,#e11d2e18,transparent 52%),linear-gradient(145deg,#11161c,#07090c);border:1px solid #ffffff13;box-shadow:0 35px 80px #0008;overflow:hidden}
+.viewer-wrap:before{content:"";position:absolute;inset:16% 13%;border:1px solid #e11d2e22;border-radius:50%;transform:rotateX(68deg);box-shadow:0 0 70px #e11d2e16}
+model-viewer{position:relative;z-index:2;width:100%;height:500px;--poster-color:transparent;background:transparent;--progress-bar-color:#e11d2e;--progress-mask:transparent}
+.viewer-label{position:absolute;left:22px;top:20px;z-index:6;padding:9px 12px;border-radius:999px;background:#ffffff0d;border:1px solid #ffffff18;color:#dfe5eb;font-size:11px;font-weight:800;letter-spacing:1px}
+.viewer-help{position:absolute;right:20px;bottom:20px;z-index:6;color:#aab4bf;font-size:11px;background:#05070acc;border:1px solid #ffffff14;padding:9px 12px;border-radius:999px}
+.model-status{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:1;color:#9da7b2;font-size:12px;font-weight:800;letter-spacing:.5px;white-space:nowrap;pointer-events:none}.viewer-actions{position:absolute;left:20px;bottom:20px;z-index:7;display:flex;gap:8px}
+.viewer-actions button{border:1px solid #ffffff1c;background:#0a0d11dd;color:#fff;border-radius:9px;padding:9px 12px;font-weight:750;cursor:pointer}
+.service-stage{position:absolute;inset:0;z-index:3;pointer-events:none;background:transparent}
+.service-platform{position:absolute;left:12%;right:12%;bottom:16%;height:5px;border-radius:99px;background:#ffffff18;box-shadow:0 0 35px #e11d2e18}
+.service-platform:after{content:"";position:absolute;left:8%;right:8%;top:-7px;height:20px;border-top:2px solid #ffffff10;border-radius:50%}
+.scan-line{position:absolute;left:12%;right:12%;top:18%;height:2px;background:linear-gradient(90deg,transparent,#e11d2e,transparent);opacity:0;filter:blur(.2px);box-shadow:0 0 16px #e11d2e}
+.service-stage.active .scan-line{opacity:1;animation:scan 2.4s ease-in-out infinite}
+.service-pulse{position:absolute;left:50%;top:51%;width:170px;height:70px;transform:translate(-50%,-50%);border:1px solid #e11d2e55;border-radius:50%;opacity:0}
+.service-stage.active .service-pulse{animation:pulse 1.8s ease-out infinite}
+.service-drip{position:absolute;left:47%;bottom:19%;width:7px;height:22px;border-radius:50%;background:#9a6a2d;opacity:0;box-shadow:0 0 12px #9a6a2d}
+.service-stage.oil .service-drip{opacity:1;animation:drip 1.7s ease-in infinite}
+.service-bubbles{position:absolute;right:17%;bottom:23%;opacity:0;font-size:18px;letter-spacing:10px}
+.service-stage.wash .service-bubbles{opacity:1;animation:bubbles 1.5s ease-in-out infinite}
+.service-badge{position:absolute;right:18px;top:64px;z-index:6;padding:8px 11px;border:1px solid #ffffff18;background:#07090ccc;border-radius:10px;color:#fff;font-size:10px;font-weight:800;letter-spacing:.7px;opacity:0;transition:.25s}
+.service-badge.show{opacity:1}
+.service-tools{position:absolute;left:18px;top:64px;z-index:6;display:flex;flex-direction:column;gap:7px;pointer-events:auto}
+.service-tool{border:1px solid #ffffff18;background:#07090ccc;color:#cbd3db;border-radius:9px;padding:8px 10px;font-size:10px;font-weight:800;cursor:pointer;transition:.2s}.service-tool:hover,.service-tool.active{background:#e11d2e;color:#fff;border-color:#e11d2e}
+@keyframes scan{0%{top:17%;opacity:0}15%{opacity:1}85%{opacity:1}100%{top:78%;opacity:0}}
+@keyframes pulse{0%{transform:translate(-50%,-50%) scale(.55);opacity:.7}100%{transform:translate(-50%,-50%) scale(1.8);opacity:0}}
+@keyframes drip{0%{transform:translateY(-12px) scale(.6);opacity:0}30%{opacity:1}100%{transform:translateY(30px) scale(1);opacity:0}}
+@keyframes bubbles{0%{transform:translateY(12px);opacity:0}35%{opacity:1}100%{transform:translateY(-35px);opacity:0}}
+.brands{padding:65px 0;border-bottom:1px solid var(--line)}.brand-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:12px}
+.brand{height:100px;border:1px solid var(--line);border-radius:14px;display:grid;place-items:center;background:#fff;transition:.2s}.brand:hover{transform:translateY(-3px);box-shadow:0 14px 30px #10182010}
+.brand img{width:55px;height:55px;object-fit:contain}.brand.wide img{width:88px}
+.pricing{background:var(--light)}.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.pricecard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:29px}.pricecard.featured{border:2px solid var(--red);box-shadow:0 16px 40px #e11d2e18}.pricecard h3{font-size:20px}.price{font-size:34px;font-weight:950;margin:8px 0 16px}.pricecard li{list-style:none;padding:8px 0;border-bottom:1px solid #edf0f3;color:#59636d}.pricecard li:before{content:"✓";color:var(--red);font-weight:900;margin-right:9px}
+.booking{color:#fff;background:linear-gradient(90deg,#07090cf5,#07090cd9),url('https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=2200&q=90') center/cover}.bookgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.bookgrid h2{font-size:clamp(40px,5vw,52px);line-height:1.05;letter-spacing:-1.7px;margin:10px 0 18px}.bookgrid p{color:#bfc7d0}.contact-line{margin-top:22px;color:#e5e9ed}.contact-line b{color:#fff}
+form{background:#fff;color:#111820;padding:30px;border-radius:17px;box-shadow:0 25px 70px #0008}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-weight:800;font-size:13px;display:block;margin-bottom:5px}input,select,textarea{width:100%;padding:13px;border:1px solid #dce1e6;border-radius:9px;font:inherit;background:#fff}input:focus,select:focus,textarea:focus{outline:2px solid #e11d2e33;border-color:var(--red)}textarea{height:110px;resize:vertical}.full{grid-column:1/-1}
+.contact-section{background:#fff}.contactgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.contact{border:1px solid var(--line);border-radius:15px;padding:30px;text-align:center}.contact .icon{font-size:27px;margin-bottom:8px}.contact p{color:#6c7580;margin-top:4px}
+footer{background:#07090c;color:#fff;padding:55px 0 20px}.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.foot p,.foot li{color:#98a2ad;font-size:14px}.foot ul{list-style:none;margin-top:10px}.bottom{border-top:1px solid #ffffff12;margin-top:35px;padding-top:17px;text-align:center;color:#68727d;font-size:12px}
+.welcome-screen{position:fixed;inset:0;z-index:9999;background:#05070a;display:grid;place-items:center;overflow:hidden;animation:welcomeOut .7s ease 2.7s forwards}.welcome-glow{position:absolute;width:650px;height:650px;border-radius:50%;background:radial-gradient(circle,#e11d2e26 0,transparent 67%);animation:glowPulse 2s ease-in-out infinite}.welcome-content{text-align:center;position:relative;z-index:2;animation:welcomeIn 1s cubic-bezier(.2,.8,.2,1)}.welcome-mark{font-size:44px;font-weight:950;letter-spacing:3px;line-height:.9;margin-bottom:18px;color:#fff}.welcome-mark span{color:#e11d2e}.welcome-mark small{display:block;font-size:10px;letter-spacing:4px;color:#aab2bd;margin-top:8px}.welcome-photo{width:min(620px,85vw);height:270px;margin:10px auto 20px;border-radius:22px;overflow:hidden;box-shadow:0 35px 70px #000b;border:1px solid #ffffff14}.welcome-photo img{width:100%;height:100%;object-fit:cover;display:block}.welcome-title{font-size:25px;font-weight:850;letter-spacing:2px;color:#fff}.welcome-title b{color:#ff3447}.welcome-sub{color:#9fa9b4;font-size:12px;margin-top:7px}.welcome-line{width:170px;height:2px;background:#ffffff14;margin:19px auto 0;overflow:hidden}.welcome-line i{display:block;height:100%;width:0;background:#e11d2e;animation:loadLine 2.2s ease forwards}
+@keyframes welcomeIn{from{opacity:0;transform:translateY(25px) scale(.94)}to{opacity:1;transform:none}}@keyframes welcomeOut{to{opacity:0;visibility:hidden;pointer-events:none}}@keyframes loadLine{to{width:100%}}@keyframes glowPulse{50%{transform:scale(1.12);opacity:.7}}
+@media(max-width:1050px){nav{display:none}.grid{grid-template-columns:repeat(2,1fr)}.feature-grid,.bookgrid{grid-template-columns:1fr}.brand-grid{grid-template-columns:repeat(4,1fr)}.prices{grid-template-columns:repeat(2,1fr)}.viewer-wrap,model-viewer{min-height:430px;height:430px}.foot{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){section{padding:72px 0}.grid,.brand-grid{grid-template-columns:1fr 1fr}.prices{grid-template-columns:1fr}.hero{min-height:680px}.hero h1{font-size:51px;letter-spacing:-2.5px}.title h2{font-size:34px}.benefits{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.contactgrid{grid-template-columns:1fr}.foot{grid-template-columns:1fr}.welcome-photo{height:210px}.viewer-wrap,model-viewer{min-height:360px;height:360px}.viewer-help{display:none}.brand{height:88px}}
+@media(max-width:430px){.grid,.brand-grid{grid-template-columns:1fr}.actions .btn{width:100%}.hero h1{font-size:46px}}
+@media(prefers-reduced-motion:reduce){.hero:before,.pulse-dot,.welcome-glow{animation:none!important}}
+</style>
+</head>
+<body>
+
+<div class="welcome-screen" id="welcomeScreen">
+  <div class="welcome-glow"></div>
+  <div class="welcome-content">
+    <div class="welcome-mark"><span>GILL</span><small>CAR SERVICES</small></div>
+    <div class="welcome-photo"><img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1400&q=90" alt="Premium car"></div>
+    <div class="welcome-title">PREMIUM <b>AUTOMOTIVE CARE</b></div>
+    <div class="welcome-sub">Maintenance • Repairs • Diagnostics • Vehicle Care</div>
+    <div class="welcome-line"><i></i></div>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#"><b>GILL</b> CAR SERVICES</a>
+    <nav>
+      <a href="#services">Services</a><a href="#experience">3D Car</a><a href="#brands">Brands</a><a href="#pricing">Packages</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="#booking">Book Service</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">Professional Automotive Care</div>
+    <h1>Service your car with <span>confidence.</span></h1>
+    <p>Premium maintenance, repairs, diagnostics and everyday vehicle care — presented with a modern automotive experience.</p>
+    <div class="actions"><a class="btn" href="#booking">Book Your Service →</a><a class="btn alt" href="#services">Explore Services</a></div>
+    <div class="trust"><div><strong>01</strong>Clear service</div><div><strong>02</strong>Quality-focused care</div><div><strong>03</strong>Easy email booking</div></div>
+  </div>
+</section>
+
+<section class="services" id="services">
+<div class="container">
+  <div class="title"><div class="eyebrow">Our Services</div><h2>Complete Car Care</h2><p>From routine servicing to interior/exterior detailing and paint compound care, every service has a clear visual.</p></div>
+  <div class="grid">
+    <article class="card"><img src="https://images.unsplash.com/photo-1632823471565-1ecdf5c2b1c4?auto=format&fit=crop&w=1000&q=90" alt="Engine oil service"><div class="card-body"><h3>Oil Change</h3><p>Engine oil replacement and routine maintenance.</p><a href="#booking">Book service →</a></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1000&q=90" alt="Oil and filter service"><div class="card-body"><h3>Oil & Filter Change</h3><p>Fresh oil and filter care for smoother operation.</p><a href="#booking">Book service →</a></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1000&q=90" alt="Brake service"><div class="card-body"><h3>Brake Service</h3><p>Brake inspection, pads, discs and maintenance.</p><a href="#booking">Book service →</a></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1000&q=90" alt="Shock absorber service"><div class="card-body"><h3>Shock Absorbers</h3><p>Suspension inspection and replacement.</p><a href="#booking">Book service →</a></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=90" alt="Wheel hub and wheel service"><div class="card-body"><h3>Wheel Hub Service</h3><p>Wheel hub, bearing and related inspection.</p><a href="#booking">Book service →</a></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1000&q=90" alt="Engine service"><div class="card-body"><h3>Engine Service</h3><p>Routine engine checks and maintenance.</p><a href="#booking">Book service →</a></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1000&q=90" alt="Tyres and wheels"><div class="card-body"><h3>Tyres & Wheels</h3><p>Tyre inspection, wheel care and replacement.</p><a href="#booking">Book service →</a></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1597007066704-67bf2068d5b2?auto=format&fit=crop&w=1000&q=90" alt="Vehicle diagnostics"><div class="card-body"><h3>Diagnostics</h3><p>Identify vehicle problems quickly and clearly.</p><a href="#booking">Book service →</a></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1000&q=90" alt="Car interior and exterior wash"><div class="card-body"><h3>Interior & Exterior Wash</h3><p>Deep interior cleaning, exterior wash and professional compound finish.</p><a href="#booking">Book service →</a></div></article>
+  </div>
+</div>
+</section>
+
+<section class="feature" id="experience">
+<div class="container feature-grid">
+  <div>
+    <div class="eyebrow">Interactive BMW 3D Vehicle</div>
+    <h2>Explore the BMW.<br>From <span>every angle.</span></h2>
+    <p>Explore a realistic BMW M4 Competition 3D model. Drag to rotate, pinch or scroll to zoom, and use the controls for an automatic 360° turntable.</p>
+    <div class="benefits">
+      <div class="benefit"><b>360° View</b>Inspect the vehicle from every direction</div>
+      <div class="benefit"><b>Real 3D Model</b>BMW M4 Competition 3D model</div>
+      <div class="benefit"><b>Touch Ready</b>Works with mobile drag and pinch</div>
+      <div class="benefit"><b>Premium UI</b>Designed as a modern automotive showcase</div>
+    </div>
+    <a class="btn" href="#booking">Book This Service →</a>
+  </div>
+  <div class="viewer-wrap">
+    <div class="viewer-label">GILL BMW 3D SERVICE EXPERIENCE</div>
+    <div class="service-tools" aria-label="BMW service demonstrations">
+      <button class="service-tool active" data-mode="diagnostics">Diagnostics</button>
+      <button class="service-tool" data-mode="oil">Oil Service</button>
+      <button class="service-tool" data-mode="brakes">Brake Check</button>
+      <button class="service-tool" data-mode="wash">Wash + Compound</button>
+    </div>
+    <div id="serviceBadge" class="service-badge show">LIVE • DIAGNOSTIC SCAN</div>
+    <div id="serviceStage" class="service-stage active diagnostics">
+      <div class="scan-line"></div>
+      <div class="service-pulse"></div>
+      <div class="service-drip"></div>
+      <div class="service-bubbles">○ ○ ○</div>
+      <div class="service-platform"></div>
+    </div>
+    <model-viewer id="carModel"
+      src="./bmw-m4.web.glb"
+      poster="./IMG_5525.jpeg"
+      alt="Interactive 3D BMW M4 Competition M Package"
+      camera-controls
+      auto-rotate
+      rotation-per-second="18deg"
+      shadow-intensity="1.2"
+      shadow-softness="0.7"
+      exposure="1.8"
+      tone-mapping="commerce"
+      environment-image="https://modelviewer.dev/shared-assets/environments/neutral.hdr"
+      camera-orbit="0deg 75deg 4m"
+      field-of-view="35deg"
+      interaction-prompt="auto"
+      loading="eager">
+    </model-viewer>
+    <div id="modelStatus" class="model-status">Loading realistic BMW 3D model…</div>
+    <div class="viewer-actions"><button id="rotateBtn">Pause Rotation</button><button id="resetBtn">Reset View</button></div>
+    <div class="viewer-help">↔ Drag • Pinch/scroll to zoom</div>
+  </div>
+</div>
+</section>
+
+<section class="brands" id="brands">
+<div class="container">
+  <div class="title"><div class="eyebrow">Brands</div><h2>Brands We Work With</h2><p>Brand emblems are shown visually instead of using plain text brand names.</p></div>
+  <div class="brand-grid">
+    <div class="brand"><img src="https://cdn.simpleicons.org/toyota" alt="Toyota logo"></div>
+    <div class="brand"><img src="https://cdn.simpleicons.org/bmw" alt="BMW logo"></div>
+    <div class="brand"><img src="https://cdn.simpleicons.org/mercedes" alt="Mercedes-Benz logo"></div>
+    <div class="brand"><img src="https://cdn.simpleicons.org/audi" alt="Audi logo"></div>
+    <div class="brand"><img src="https://cdn.simpleicons.org/volkswagen" alt="Volkswagen logo"></div>
+    <div class="brand"><img src="https://cdn.simpleicons.org/ford" alt="Ford logo"></div>
+    <div class="brand"><img src="https://cdn.simpleicons.org/honda" alt="Honda logo"></div>
+    <div class="brand"><img src="https://cdn.simpleicons.org/tesla" alt="Tesla logo"></div>
+  </div>
+</div>
+</section>
+
+<section class="pricing" id="pricing">
+<div class="container">
+  <div class="title"><div class="eyebrow">Service Packages & Pricing</div><h2>Transparent Car Service Prices</h2><p>Clear starting ranges for common services. Final pricing can vary by vehicle, parts and condition.</p></div>
+  <div class="prices">
+    <article class="pricecard"><h3>Oil Change Only</h3><div class="price">$80–$150</div><ul><li>Oil replacement</li><li>Oil filter replacement</li><li>Basic service check</li></ul><br><a class="btn" href="#booking">Book Oil Change →</a></article>
+    <article class="pricecard featured"><h3>Basic / Interim Service</h3><div class="price">$150–$250</div><ul><li>Oil & filter replacement</li><li>Fluid top-ups</li><li>20–30 point safety check</li></ul><br><a class="btn" href="#booking">Book Service →</a></article>
+    <article class="pricecard"><h3>Full Service</h3><div class="price">$280–$450</div><ul><li>All basic checks</li><li>Air & cabin filters</li><li>Spark plugs</li><li>Detailed brake & suspension inspection</li></ul><br><a class="btn" href="#booking">Book Full Service →</a></article>
+    <article class="pricecard"><h3>Major Service</h3><div class="price">$400–$900+</div><ul><li>Full service included</li><li>Coolant flush</li><li>Brake fluid flush</li><li>Transmission fluid change</li></ul><br><a class="btn" href="#booking">Book Major Service →</a></article>
+    <article class="pricecard"><h3>Wash + Compound</h3><div class="price">Request Quote</div><ul><li>Interior deep clean</li><li>Exterior wash</li><li>Paint compound finish</li><li>Detailing inspection</li></ul><br><a class="btn" href="#booking">Request Quote →</a></article>
+  </div>
+</div>
+</section>
+
+<section class="booking" id="booking">
+<div class="container bookgrid">
+  <div><div class="eyebrow">Book Your Service</div><h2>Keep Your Car Running at Its Best.</h2><p>Send your service request directly to GILL CAR SERVICES by email. No mobile number is displayed on this website.</p><div class="contact-line"><b>✉</b> Your service request will be sent securely by email.</div></div>
+  <form id="bookingForm"><h2>Request a Booking</h2><br><div class="formgrid">
+    <div><label>Name</label><input id="name" required></div><div><label>Email</label><input id="customerEmail" type="email" required></div>
+    <div><label>Vehicle</label><input id="vehicle" placeholder="BMW 3 Series"></div>
+    <div><label>Service</label><select id="service"><option>Oil Change</option><option>Oil & Filter Change</option><option>Brake Service</option><option>Shock Absorbers</option><option>Wheel Hub Service</option><option>Engine Service</option><option>Tyres & Wheels</option><option>Diagnostics</option><option>General Service</option><option>Interior & Exterior Wash + Compound</option></select></div>
+    <div><label>Preferred Date</label><input id="date" type="date"></div><div><label>Preferred Time</label><input id="time" type="time"></div>
+    <div class="full"><label>Message</label><textarea id="message" placeholder="Tell us briefly what your car needs..."></textarea></div>
+    <div class="full"><button class="btn" type="submit" style="width:100%">Send Booking Request by Email →</button></div>
+  </div></form>
+</div>
+</section>
+
+<section class="contact-section" id="contact"><div class="container">
+  <div class="title"><div class="eyebrow">Contact</div><h2>GILL CAR SERVICES</h2><p>Professional and affordable car servicing and repairs.</p></div>
+  <div class="contactgrid">
+    <div class="contact"><div class="icon">✉️</div><h3>Email</h3><p>Send a booking request through the form and we’ll receive it by email.</p></div>
+    <div class="contact"><div class="icon">🔧</div><h3>Service</h3><p>Maintenance • Repairs • Diagnostics</p></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="container foot">
+  <div><div class="logo"><b>GILL</b> CAR SERVICES</div><p>Professional automotive maintenance, repairs and diagnostics with a premium digital experience.</p></div>
+  <div><h3>Services</h3><ul><li>Oil Change</li><li>Full & Major Service</li><li>Brakes & Suspension</li><li>Diagnostics</li><li>Interior / Exterior Wash + Compound</li></ul></div>
+  <div><h3>Contact</h3><ul><li>Email booking available</li></ul></div>
+</div><div class="container bottom">© 2026 GILL CAR SERVICES. All rights reserved. <span style="display:block;margin-top:6px">3D BMW M4 model by SRT Performance, used under CC BY 4.0.</span></div></footer>
+
+<script>
+const car=document.getElementById('carModel');
+const rotateBtn=document.getElementById('rotateBtn');
+rotateBtn.addEventListener('click',()=>{car.autoRotate=!car.autoRotate;rotateBtn.textContent=car.autoRotate?'Pause Rotation':'Start Rotation'});
+document.getElementById('resetBtn').addEventListener('click',()=>{car.cameraOrbit='0deg 75deg auto';car.fieldOfView='45deg'});
+
+// Interactive service-bay demonstration around the realistic BMW 3D model.
+const stage=document.getElementById('serviceStage');
+const badge=document.getElementById('serviceBadge');
+const serviceNames={diagnostics:'LIVE • DIAGNOSTIC SCAN',oil:'SERVICE • OIL + FILTER',brakes:'CHECK • BRAKE + SUSPENSION',wash:'DETAILING • WASH + COMPOUND'};
+document.querySelectorAll('.service-tool').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const mode=btn.dataset.mode;
+    stage.className='service-stage active '+mode;
+    badge.textContent=serviceNames[mode];
+    document.querySelectorAll('.service-tool').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+
+const model=document.getElementById('carModel');
+const modelStatus=document.getElementById('modelStatus');
+model.addEventListener('load',()=>{modelStatus.textContent='BMW M4 • 360° interactive 3D';modelStatus.style.opacity='.0'});
+model.addEventListener('error',()=>{modelStatus.textContent='3D model could not load — please check bmw-m4.web.glb';modelStatus.style.opacity='1'});
+
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const subject=encodeURIComponent('GILL CAR SERVICES — Booking Request');
+  const body=encodeURIComponent(
+`Hello GILL CAR SERVICES,
+
+I would like to request a service booking.
+
+Name: ${document.getElementById('name').value}
+Customer Email: ${document.getElementById('customerEmail').value}
+Vehicle: ${document.getElementById('vehicle').value}
+Service: ${document.getElementById('service').value}
+Preferred Date: ${document.getElementById('date').value}
+Preferred Time: ${document.getElementById('time').value}
+
+Message:
+${document.getElementById('message').value}`
+  );
+  window.location.href=`mailto:manmeetgill17593@gmail.com?subject=${subject}&body=${body}`;
+});
+</script>
+</body>
+</html>
